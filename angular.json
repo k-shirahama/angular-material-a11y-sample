@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "angular-material-a11y-sample"
+  "defaultProject": "angular-material-a11y-sample",
+  "cli": {
+    "analytics": false
+  }
 }
