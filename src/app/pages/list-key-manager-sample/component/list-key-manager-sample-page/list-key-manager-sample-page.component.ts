@@ -1,4 +1,4 @@
-import {Component, ElementRef} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-list-key-manager-sample',
@@ -16,9 +16,6 @@ export class ListKeyManagerSamplePageComponent {
     'Avocados',
   ];
   isVisibleListItem = false;
-
-  constructor(private element: ElementRef) {
-  }
 
   onClickButton(): void {
     this.isVisibleListItem = !this.isVisibleListItem;
