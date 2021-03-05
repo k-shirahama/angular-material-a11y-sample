@@ -39,8 +39,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "deploy": "npm run lint && npm run build",
-    "deploy:prod": "npm run lint && npm run build -- -c production",
+    "deploy": "npm run lint && npm run build -- -c $ENVIRONMENT_PARAM",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
