@@ -39,7 +39,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "deploy": "npm run lint && npm run build -- -c $ENVIRONMENT_PARAM",
+    "deploy": "echo $VERCEL_GIT_COMMIT_REF && if [ \"$VERCEL_GIT_COMMIT_REF\" = master ]; then env=production; elif [ $branch = staging ]; then env=staging; fi && npm run build -- -c=$env",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
